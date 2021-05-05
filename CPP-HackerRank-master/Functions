@@ -68,3 +68,25 @@ int main() {
     return 0;
 }
 
+
+another version
+
+#include <iostream>  //std::int
+#include <algorithm> //std::max
+using namespace std;
+
+bool abc(int a, int b)
+{
+    return (a < b);
+}
+
+int main()
+{
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+    cout << "Maximum element is: " << max({a, b, c, d}, abc) << "\n";
+    return 0;
+    
+}
+Reff:
+https://www.geeksforgeeks.org/stdmax-in-cpp/
