@@ -1,0 +1,30 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+void sum(int *a){
+    int s=0;
+    for(int i=0;i<5;i++ )
+    {
+       int b=1;
+       while(b<a[i]){
+           b=b*2;
+           if(b==a[i])
+           {cout<<a[i]<<" ";
+           s+=a[i];
+           break;
+           }
+          
+           }
+          
+    }
+    cout<<"\nsum = "<<s;
+}
+
+int main() {
+    // Write C++ code here
+    int a[5]= {1,2,3,4,5};
+    sum(a);
+
+    return 0;
+}
